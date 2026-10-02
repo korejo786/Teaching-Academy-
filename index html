@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxford Online Teaching Academy</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#16345d;background:#f5f9ff}
+header{background:#0a3b78;color:#fff;padding:18px 16px;position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:21px;font-weight:700}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{background:linear-gradient(135deg,#e8f5ff,#fff);padding:55px 18px}
+.hero-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.badge{color:#0874c9;font-weight:700;font-size:14px;margin-bottom:12px}
+h1{font-size:46px;line-height:1.08;margin:0 0 16px}
+h1 span{color:#087bd3}
+.hero p{font-size:17px;line-height:1.7;color:#60728a}
+.button{display:inline-block;background:#0870c9;color:#fff;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:700;margin-top:12px}
+.hero img{width:100%;height:350px;object-fit:cover;border-radius:20px;box-shadow:0 12px 35px #16345d25}
+.section{max-width:1100px;margin:auto;padding:48px 18px}
+.title{text-align:center;font-size:30px;margin:0 0 28px}
+.subjects{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.subject{background:#fff;border-radius:12px;padding:22px;text-align:center;box-shadow:0 5px 18px #16345d14;border:1px solid #e1eaf3;font-weight:700}
+.teaching{background:#eef7ff}
+.image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.image-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 20px #16345d18}
+.image-card img{width:100%;height:210px;object-fit:cover;display:block}
+.image-card div{padding:18px}
+.image-card h3{margin:0 0 8px;font-size:18px}
+.image-card p{margin:0;color:#66778d;line-height:1.5;font-size:14px}
+.features{background:#0a5eae;color:#fff}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature{text-align:center;padding:25px;background:#ffffff14;border:1px solid #ffffff30;border-radius:12px}
+.feature h3{margin:0 0 8px}
+.apply{max-width:680px;margin:auto;background:#fff;padding:28px;border-radius:15px;box-shadow:0 7px 25px #16345d18}
+input,select,textarea,button{width:100%;padding:13px;margin:6px 0;border-radius:7px;border:1px solid #ccd8e6;font-size:15px;font-family:inherit}
+textarea{height:100px;resize:vertical}
+button{background:#0870c9;color:#fff;border:0;font-weight:700;cursor:pointer}
+.success{display:none;color:#08733d;background:#e8fff0;padding:12px;border-radius:7px;margin-top:8px}
+footer{background:#092f61;color:#fff;text-align:center;padding:28px 15px;line-height:1.8}
+@media(max-width:760px){
+nav{display:none}.hero{padding:38px 16px}.hero-grid{grid-template-columns:1fr;gap:25px}
+h1{font-size:35px}.hero img{height:270px}.subjects{grid-template-columns:repeat(2,1fr)}
+.image-grid,.feature-grid{grid-template-columns:1fr}.section{padding:38px 15px}
+}
+@media(max-width:390px){.subjects{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="brand">Oxford Online Teaching Academy</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#subjects">Subjects</a>
+<a href="#teaching">Online Teaching</a>
+<a href="#apply">Apply</a>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-grid">
+<div>
+<div class="badge">ONLINE TEACHERS AND TUTORS</div>
+<h1>Teach Online.<br><span>Inspire Students.</span></h1>
+<p>Join Oxford Online Teaching Academy and teach students from the comfort of your home. Flexible online teaching opportunities are available for qualified and motivated teachers.</p>
+<a class="button" href="#apply">Apply as a Teacher</a>
+</div>
+<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=85" alt="Teacher teaching students online">
+</div>
+</section>
+
+<section class="section" id="subjects">
+<h2 class="title">Available Subjects</h2>
+<div class="subjects">
+<div class="subject">English</div>
+<div class="subject">Mathematics</div>
+<div class="subject">Physics</div>
+<div class="subject">Chemistry</div>
+<div class="subject">Biology</div>
+<div class="subject">Urdu</div>
+<div class="subject">Islamiyat</div>
+<div class="subject">Computer Science</div>
+</div>
+</section>
+
+<section class="teaching" id="teaching">
+<div class="section">
+<h2 class="title">Online Teaching Environment</h2>
+<div class="image-grid">
+<div class="image-card">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=85" alt="Online classroom">
+<div><h3>Online Classroom</h3><p>Professional online learning sessions designed for students and teachers.</p></div>
+</div>
+<div class="image-card">
+<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=85" alt="Female teacher">
+<div><h3>Professional Teachers</h3><p>Connect with students through structured and engaging lessons.</p></div>
+</div>
+<div class="image-card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Student using computer">
+<div><h3>Digital Learning</h3><p>Use modern digital tools for convenient home-based education.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="features">
+<div class="section">
+<h2 class="title">Why Teach With Us?</h2>
+<div class="feature-grid">
+<div class="feature"><h3>Home Based</h3><p>Teach from the comfort of your home.</p></div>
+<div class="feature"><h3>Flexible Schedule</h3><p>Choose suitable teaching hours.</p></div>
+<div class="feature"><h3>Online Classes</h3><p>Classes can be conducted through Zoom or WhatsApp.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="apply">
+<h2 class="title">Teacher Application</h2>
+<div class="apply">
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="WhatsApp Number" required>
+<select required>
+<option value="">Select Subject</option>
+<option>English</option><option>Mathematics</option><option>Physics</option>
+<option>Chemistry</option><option>Biology</option><option>Urdu</option>
+<option>Islamiyat</option><option>Computer Science</option>
+</select>
+<select required>
+<option value="">Teaching Experience</option>
+<option>Fresh / Beginner</option><option>1 to 2 Years</option>
+<option>3 to 5 Years</option><option>5+ Years</option>
+</select>
+<textarea placeholder="Briefly describe your teaching experience"></textarea>
+<button type="submit">Submit Application</button>
+<div class="success" id="success">Application submitted successfully.</div>
+</form>
+</div>
+</section>
+
+<footer>
+<strong>Oxford Online Teaching Academy</strong><br>
+Online Teaching | Flexible Schedule | Grades 5 to 12<br>
+Online classes through Zoom or WhatsApp
+</footer>
+
+<script>
+function submitForm(event){
+event.preventDefault();
+document.getElementById("success").style.display="block";
+event.target.reset();
+}
+</script>
+</body>
+</html>
