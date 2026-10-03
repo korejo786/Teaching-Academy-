@@ -1,0 +1,274 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Digital Youth Network</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#102a4c;background:#f5f9ff}header{background:#071d3b;color:#fff;padding:18px;text-align:center;font-size:22px;font-weight:800}.hero{background:linear-gradient(135deg,#071d3b,#0756b8,#08bde9);color:#fff;padding:55px 18px}.wrap{max-width:1100px;margin:auto}.hero h1{font-size:48px;margin:10px 0}.hero span{color:#7ee7ff}.hero p{font-size:18px;line-height:1.6}.btn{display:inline-block;background:#fff;color:#0756b8;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:700}.art{max-width:650px;margin:30px auto 0;background:#ffffff18;border-radius:20px;padding:10px}.art svg{width:100%;display:block}.sec{max-width:1100px;margin:auto;padding:48px 18px}.title{text-align:center;font-size:30px}.sub{text-align:center;color:#63758b;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;padding:22px;border-radius:15px;box-shadow:0 6px 20px #102a4c15;border:1px solid #e1eaf3}.icon{width:55px;height:55px;border-radius:12px;background:#e8f7ff;display:grid;place-items:center;font-weight:800;color:#0756b8}.card h3{margin-bottom:8px}.card p{color:#65768a;line-height:1.5;font-size:14px}.ai{background:#edf8ff}.ai .card{padding:0;overflow:hidden}.ai svg{width:100%;display:block}.ai .txt{padding:18px}.steps{background:#071d3b;color:#fff}.stepgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{text-align:center;padding:20px;background:#ffffff12;border:1px solid #ffffff25;border-radius:12px}.ceo{text-align:center}.name{font-size:31px;font-weight:900;color:#0756b8}.role{color:#65768a}footer{background:#06182f;color:#fff;text-align:center;padding:28px;line-height:1.8}@media(max-width:750px){.hero h1{font-size:36px}.grid{grid-template-columns:1fr}.stepgrid{grid-template-columns:repeat(2,1fr)}}@media(max-width:420px){.stepgrid{grid-template-columns:1fr}}
+
+.social{background:#fff}.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.social-logo{height:110px;border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#fff;box-shadow:0 7px 20px #102a4c18}.social-logo svg{width:38px;height:38px;fill:currentColor}.social-logo b{font-size:15px}.facebook{background:#1877f2}.instagram{background:linear-gradient(135deg,#feda75,#d62976,#4f5bd5)}.tiktok{background:#111}.youtube{background:#e62117}.apply{background:#eef8ff}.form-box{max-width:780px;margin:auto;background:#fff;padding:26px;border-radius:16px;box-shadow:0 7px 24px #102a4c15}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}input,select,textarea{width:100%;padding:13px;border:1px solid #ccd9e8;border-radius:8px;font:inherit;margin-bottom:12px}textarea{height:120px;resize:vertical}button{width:100%;padding:14px;border:0;border-radius:8px;background:#0756b8;color:#fff;font-weight:800;font-size:15px;cursor:pointer}.success{display:none;margin-top:12px;padding:12px;background:#e8fff1;color:#08733d;border-radius:8px;text-align:center}@media(max-width:750px){.social-grid{grid-template-columns:repeat(2,1fr)}.form-grid{grid-template-columns:1fr}}@media(max-width:420px){.social-grid{grid-template-columns:1fr}}
+
+/* Digital trading / AI visual upgrade */
+body{overflow-x:hidden}
+.hero{position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.22;pointer-events:none}
+.hero:before{width:420px;height:420px;right:-160px;top:-180px;background:#00e5ff;box-shadow:0 0 100px #00e5ff}
+.hero:after{width:300px;height:300px;left:-150px;bottom:-170px;background:#6c63ff;box-shadow:0 0 100px #6c63ff}
+.hero .wrap{position:relative;z-index:2}
+.digital-panel{margin:30px auto 0;max-width:760px;position:relative;background:linear-gradient(145deg,#06172fdd,#0a3f7dee);border:1px solid #62e9ff55;border-radius:22px;padding:14px;box-shadow:0 0 45px #00d9ff22,inset 0 0 30px #ffffff08}
+.digital-top{display:flex;justify-content:space-between;align-items:center;padding:8px 10px 12px;color:#bfefff;font-size:12px;letter-spacing:1px}
+.live-dot{display:inline-flex;align-items:center;gap:7px}
+.live-dot i{width:8px;height:8px;border-radius:50%;background:#45ff9a;box-shadow:0 0 12px #45ff9a;animation:pulse 1.2s infinite}
+.digital-chart{height:250px;border-radius:15px;background:linear-gradient(180deg,#071d3b,#041226);position:relative;overflow:hidden;border:1px solid #ffffff12}
+.digital-chart:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#4cdfff12 1px,transparent 1px),linear-gradient(90deg,#4cdfff12 1px,transparent 1px);background-size:50px 50px}
+.chart-line{position:absolute;inset:20px 18px 28px;overflow:hidden}
+.chart-line svg{width:100%;height:100%}
+.scan{position:absolute;top:0;bottom:0;width:2px;background:#5de7ff55;box-shadow:0 0 18px #5de7ff;animation:scan 4s linear infinite}
+.price-tag{position:absolute;right:12px;top:20px;background:#45ff9a18;color:#71ffb1;border:1px solid #45ff9a66;padding:6px 9px;border-radius:7px;font-size:11px;font-weight:800}
+.ai-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.ai-badge{padding:7px 10px;border-radius:20px;background:#ffffff0d;border:1px solid #ffffff18;color:#dff9ff;font-size:11px}
+.float-card{position:absolute;background:#071d3bdd;border:1px solid #5de7ff44;border-radius:12px;padding:10px 12px;color:#dffaff;box-shadow:0 12px 30px #0005;backdrop-filter:blur(8px);font-size:11px;animation:float 4s ease-in-out infinite}
+.float-card b{display:block;color:#7ee7ff;font-size:14px;margin-bottom:3px}
+.float-card.one{right:-20px;top:45px}
+.float-card.two{left:-25px;bottom:35px;animation-delay:1.2s}
+@keyframes pulse{50%{opacity:.35;transform:scale(.75)}}
+@keyframes scan{0%{left:0}100%{left:100%}}
+@keyframes float{50%{transform:translateY(-8px)}}
+.ai .card{transition:transform .25s,box-shadow .25s}
+.ai .card:hover{transform:translateY(-6px);box-shadow:0 14px 35px #0756b822}
+@media(max-width:750px){.digital-chart{height:205px}.float-card.one{right:5px;top:8px}.float-card.two{left:5px;bottom:8px}.digital-top{font-size:10px}}
+
+<style>
+/* --- New Digital Marketing Visual Showcase --- */
+.visual-showcase{background:#f7fbff}
+.visual-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.visual-card{background:#fff;border:1px solid #dce8f4;border-radius:18px;padding:14px;box-shadow:0 10px 30px #102a4c12;overflow:hidden}
+.visual-card h3{margin:15px 8px 6px;color:#102a4c}
+.visual-card p{margin:0 8px 8px;color:#65768a;font-size:14px;line-height:1.5}
+.device{background:#071d3b;border-radius:14px;padding:12px 12px 16px;box-shadow:0 15px 35px #071d3b25}
+.device-top{height:10px;display:flex;gap:5px;margin-bottom:9px}
+.device-top i{width:6px;height:6px;border-radius:50%;background:#fff8}
+.laptop-screen{background:#f3f7fb;border-radius:8px;overflow:hidden;min-height:190px}
+.browser-bar{height:25px;background:#e7eef6;display:flex;align-items:center;gap:5px;padding:0 8px}
+.browser-bar span{width:6px;height:6px;border-radius:50%;background:#9db1c6}
+.browser-url{height:13px;flex:1;background:#fff;border-radius:7px;margin-left:5px}
+.website-preview{display:grid;grid-template-columns:70px 1fr;height:165px}
+.site-side{background:#09234a;padding:13px 7px}
+.site-side b{display:block;color:#7ee7ff;font-size:10px;margin-bottom:18px;text-align:center}
+.site-side div{height:7px;background:#ffffff25;border-radius:5px;margin:10px 5px}
+.site-main{padding:15px;background:linear-gradient(135deg,#eef8ff,#fff)}
+.site-main h4{margin:3px 0 7px;color:#0756b8;font-size:18px}
+.site-main p{font-size:9px;color:#65768a;margin:0 0 12px}
+.site-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.site-mini{height:58px;background:#fff;border-radius:7px;border:1px solid #dbe8f3;padding:7px}
+.site-mini b{font-size:9px;color:#0756b8}.site-mini small{display:block;font-size:7px;color:#789;margin-top:6px}
+.ad-preview{background:#eef3f8;min-height:230px;padding:12px}
+.fb-head{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.fb-avatar{width:25px;height:25px;border-radius:50%;background:#1877f2;color:#fff;display:grid;place-items:center;font-weight:bold;font-size:12px}
+.fb-head b{font-size:10px}.fb-head small{display:block;color:#8a99a8;font-size:7px}
+.fb-ad{background:#fff;border-radius:9px;border:1px solid #dce2e8;overflow:hidden}
+.fb-copy{padding:9px;font-size:9px;color:#394b5e}.sponsored{float:right;color:#8b98a6;font-size:7px}
+.ad-banner{height:105px;background:linear-gradient(135deg,#071d3b,#087bd3);color:#fff;padding:17px;position:relative;overflow:hidden}
+.ad-banner:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;right:-20px;top:-35px;background:#00d9ff44}
+.ad-banner b{font-size:19px;display:block;position:relative;z-index:1}.ad-banner span{font-size:8px;color:#9ff4ff;position:relative;z-index:1}
+.ad-btn{display:inline-block;margin-top:9px;background:#fff;color:#0756b8;border-radius:5px;padding:5px 9px;font-size:7px;font-weight:bold}
+.ad-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:9px}
+.ad-stat{background:#f5f8fb;border-radius:6px;padding:7px;text-align:center}.ad-stat b{font-size:12px;color:#0756b8;display:block}.ad-stat small{font-size:7px;color:#7b8998}
+.workspace{background:#071d3b;border-radius:14px;padding:13px;color:#fff;min-height:230px}
+.ws-top{display:flex;justify-content:space-between;color:#9ff4ff;font-size:9px;margin-bottom:10px}
+.ws-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:9px}
+.ws-chart{background:#041226;border:1px solid #ffffff15;border-radius:8px;height:170px;padding:10px}
+.ws-chart b{font-size:9px;color:#dffaff}
+.ws-chart svg{width:100%;height:130px;margin-top:8px}
+.ws-panel{display:grid;gap:8px}
+.ws-box{background:#ffffff0d;border:1px solid #ffffff12;border-radius:8px;padding:10px}.ws-box b{font-size:13px;color:#7ee7ff}.ws-box small{display:block;color:#9fb1c3;font-size:7px;margin-top:3px}
+@media(max-width:750px){.visual-grid{grid-template-columns:1fr}.website-preview{height:150px}.laptop-screen{min-height:175px}.ws-grid{grid-template-columns:1fr}.ws-panel{grid-template-columns:repeat(3,1fr)}.ws-box{padding:7px}.ws-box b{font-size:10px}}
+@media(max-width:420px){.ws-panel{grid-template-columns:1fr}}
+</style>
+</style></head><body>
+<header>Digital Youth Network</header>
+<section class="hero"><div class="wrap"><div>YOUR COMPLETE DIGITAL SOLUTIONS</div><h1>All Your Digital Needs.<br><span>AI. Digital. Trading.</span></h1><p>Professional digital solutions for businesses, brands, creators and growing online ventures.</p><a class="btn" href="#services">Explore Services</a>
+
+<div class="digital-panel">
+  <div class="digital-top">
+    <span>AI DIGITAL COMMAND CENTER</span>
+    <span class="live-dot"><i></i> LIVE SYSTEM</span>
+  </div>
+  <div class="digital-chart">
+    <div class="price-tag">AI SIGNAL +4.82%</div>
+    <div class="chart-line">
+      <svg viewBox="0 0 700 220" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#45e7ff" stop-opacity=".28"/>
+            <stop offset="1" stop-color="#45e7ff" stop-opacity="0"/>
+          </linearGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <path d="M0 180 L38 165 L72 172 L110 130 L145 146 L180 105 L218 124 L255 92 L292 112 L330 70 L365 96 L405 62 L442 84 L478 45 L515 68 L552 34 L590 58 L625 25 L700 12 L700 220 L0 220 Z" fill="url(#area)"/>
+        <polyline points="0,180 38,165 72,172 110,130 145,146 180,105 218,124 255,92 292,112 330,70 365,96 405,62 442,84 478,45 515,68 552,34 590,58 625,25 700,12" fill="none" stroke="#61edff" stroke-width="3" filter="url(#glow)"/>
+        <circle cx="625" cy="25" r="5" fill="#45ff9a"/>
+      </svg>
+    </div>
+    <div class="scan"></div>
+    <div class="float-card one"><b>AI ANALYTICS</b>Market data visualized</div>
+    <div class="float-card two"><b>TRADING VIEW</b>Live-style chart interface</div>
+  </div>
+  <div class="ai-badges">
+    <span class="ai-badge">✦ AI CREATIVE</span>
+    <span class="ai-badge">⌁ DIGITAL MARKETING</span>
+    <span class="ai-badge">↗ TRADING ANALYTICS</span>
+    <span class="ai-badge">◉ SMART SOLUTIONS</span>
+  </div>
+</div>
+</div></section>
+<section class="sec" id="services"><h2 class="title">Our Digital Services</h2><p class="sub">Professional solutions to build, promote and grow your digital presence.</p><div class="grid">
+<div class="card"><div class="icon">WEB</div><h3>Website Development</h3><p>Modern, mobile-friendly and professional websites for businesses and brands.</p></div>
+<div class="card"><div class="icon">ADS</div><h3>Facebook & Instagram Advertising</h3><p>Campaign setup, audience targeting and creative advertising for social platforms.</p></div>
+<div class="card"><div class="icon">AI</div><h3>AI Video Generation</h3><p>Creative AI-generated videos for marketing, social media and digital content.</p></div>
+<div class="card"><div class="icon">DES</div><h3>AI Posters & Graphic Design</h3><p>Promotional posters, social media graphics and creative visual designs.</p></div>
+<div class="card"><div class="icon">SOC</div><h3>Social Media Management</h3><p>Content planning, page management and online presence support.</p></div>
+<div class="card"><div class="icon">DM</div><h3>Digital Marketing</h3><p>Practical digital marketing solutions for stronger online visibility.</p></div>
+</div></section>
+<section class="ai"><div class="sec"><h2 class="title">AI Creative Solutions</h2><p class="sub">Modern visual concepts for websites, advertisements and social media campaigns.</p><div class="grid">
+<div class="card"><svg viewBox="0 0 500 240"><rect width="500" height="240" fill="#e6f7ff"/><rect x="55" y="30" width="390" height="180" rx="15" fill="white"/><circle cx="160" cy="105" r="35" fill="#ffd0b0"/><rect x="125" y="150" width="75" height="35" rx="17" fill="#0756b8"/><rect x="250" y="75" width="130" height="14" rx="7" fill="#087bd3"/><rect x="250" y="110" width="100" height="10" rx="5" fill="#b8d9ed"/></svg><div class="txt"><h3>AI Video Concepts</h3><p>Visual content concepts for reels, ads and promotional campaigns.</p></div></div>
+<div class="card"><svg viewBox="0 0 500 240"><rect width="500" height="240" fill="#edf5ff"/><rect x="65" y="35" width="370" height="170" rx="15" fill="white"/><rect x="90" y="65" width="320" height="100" rx="10" fill="#0756b8"/><text x="125" y="110" fill="white" font-size="25" font-weight="bold">YOUR BRAND</text><text x="125" y="140" fill="#7ee7ff" font-size="17">Digital Campaign</text></svg><div class="txt"><h3>AI Posters & Creatives</h3><p>Eye-catching designs for offers, campaigns and social media.</p></div></div>
+<div class="card"><svg viewBox="0 0 500 240"><rect width="500" height="240" fill="#e8f7ff"/><circle cx="250" cy="115" r="65" fill="white" stroke="#087bd3" stroke-width="7"/><rect x="200" y="85" width="100" height="60" rx="17" fill="#071d3b"/><circle cx="225" cy="115" r="7" fill="#7ee7ff"/><circle cx="275" cy="115" r="7" fill="#7ee7ff"/><path d="M220 132q30 20 60 0" fill="none" stroke="#7ee7ff" stroke-width="5"/></svg><div class="txt"><h3>Smart Digital Tools</h3><p>Technology-focused solutions for online business and content creation.</p></div></div>
+</div></div></section>
+
+
+
+<section class="sec visual-showcase" id="digital-showcase">
+  <h2 class="title">Digital Marketing & Web Showcase</h2>
+  <p class="sub">Realistic-style previews of websites, Facebook advertising campaigns and professional digital workspaces.</p>
+
+  <div class="visual-grid">
+
+    <div class="visual-card">
+      <div class="device">
+        <div class="device-top"><i></i><i></i><i></i></div>
+        <div class="laptop-screen">
+          <div class="browser-bar"><span></span><span></span><span></span><div class="browser-url"></div></div>
+          <div class="website-preview">
+            <div class="site-side"><b>YOUR BRAND</b><div></div><div></div><div></div><div></div></div>
+            <div class="site-main">
+              <h4>Grow Your Business Online</h4>
+              <p>Professional website • Digital marketing • AI solutions</p>
+              <div class="site-cards">
+                <div class="site-mini"><b>Website</b><small>Modern UI</small></div>
+                <div class="site-mini"><b>Marketing</b><small>Campaigns</small></div>
+                <div class="site-mini"><b>Analytics</b><small>Insights</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Website on Laptop</h3>
+      <p>Modern responsive webpages presented in a realistic laptop-style workspace.</p>
+    </div>
+
+    <div class="visual-card">
+      <div class="ad-preview">
+        <div class="fb-head">
+          <div class="fb-avatar">f</div>
+          <div><b>Digital Youth Network</b><small>Sponsored · Just now</small></div>
+        </div>
+        <div class="fb-ad">
+          <div class="fb-copy"><span class="sponsored">Sponsored</span><b>Grow your business with digital advertising.</b><br>Reach the right audience with professional campaigns.</div>
+          <div class="ad-banner"><b>YOUR BUSINESS<br>DESERVES MORE</b><span>Facebook Advertising • Creative • Targeting</span><br><span class="ad-btn">LEARN MORE</span></div>
+          <div class="ad-stats"><div class="ad-stat"><b>12.8K</b><small>Reach</small></div><div class="ad-stat"><b>4.8%</b><small>CTR</small></div><div class="ad-stat"><b>+326</b><small>Leads</small></div></div>
+        </div>
+      </div>
+      <h3>Facebook Advertising Preview</h3>
+      <p>Professional ad creative with campaign-style reach, clicks and lead metrics.</p>
+    </div>
+
+    <div class="visual-card">
+      <div class="workspace">
+        <div class="ws-top"><b>MARKETING ANALYTICS</b><span>● LIVE DASHBOARD</span></div>
+        <div class="ws-grid">
+          <div class="ws-chart">
+            <b>Campaign Performance</b>
+            <svg viewBox="0 0 500 130" preserveAspectRatio="none">
+              <polyline points="0,105 45,98 85,102 125,76 170,83 210,58 250,68 290,42 330,52 370,28 410,38 455,16 500,23" fill="none" stroke="#61edff" stroke-width="4"/>
+              <polyline points="0,118 45,111 85,115 125,93 170,99 210,78 250,86 290,65 330,73 370,52 410,60 455,42 500,48" fill="none" stroke="#45ff9a" stroke-width="2" opacity=".5"/>
+            </svg>
+          </div>
+          <div class="ws-panel">
+            <div class="ws-box"><b>24.6K</b><small>Reach</small></div>
+            <div class="ws-box"><b>3.82K</b><small>Engagement</small></div>
+            <div class="ws-box"><b>+18.4%</b><small>Growth</small></div>
+          </div>
+        </div>
+      </div>
+      <h3>Digital Marketing Dashboard</h3>
+      <p>Analytics-style visual showing campaign performance and business growth metrics.</p>
+    </div>
+
+    <div class="visual-card">
+      <div class="device">
+        <div class="device-top"><i></i><i></i><i></i></div>
+        <div class="laptop-screen">
+          <div class="browser-bar"><span></span><span></span><span></span><div class="browser-url"></div></div>
+          <div style="padding:15px;background:#fff;min-height:165px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+              <b style="font-size:12px;color:#0756b8">AI CREATIVE STUDIO</b><span style="font-size:8px;color:#789">Projects / Ads / Reels</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+              <div style="height:105px;border-radius:8px;background:linear-gradient(135deg,#071d3b,#087bd3);color:#fff;padding:9px;font-size:9px;font-weight:bold">AI VIDEO<br><small style="color:#9ff4ff">REEL PROJECT</small></div>
+              <div style="height:105px;border-radius:8px;background:linear-gradient(135deg,#4f5bd5,#d62976);color:#fff;padding:9px;font-size:9px;font-weight:bold">SOCIAL POST<br><small>CAMPAIGN</small></div>
+              <div style="height:105px;border-radius:8px;background:linear-gradient(135deg,#102a4c,#45e7ff);color:#fff;padding:9px;font-size:9px;font-weight:bold">AD CREATIVE<br><small>DESIGN</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>AI & Social Media Workspace</h3>
+      <p>Showcase your AI video, social media creative and advertising production services.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec" id="trading">
+  <h2 class="title">AI & Trading Analytics</h2>
+  <p class="sub">A digital dashboard concept combining AI creativity, market-style charts and modern technology visuals.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="icon">CHT</div>
+      <h3>Market-Style Charts</h3>
+      <p>Interactive-looking chart visuals designed to give your digital brand a modern analytics feel.</p>
+      <div style="margin-top:16px;background:#071d3b;border-radius:12px;padding:12px;overflow:hidden">
+        <svg viewBox="0 0 500 150" style="width:100%;display:block">
+          <polyline points="0,125 40,112 70,120 105,80 140,92 175,60 215,78 250,48 285,65 320,35 360,55 400,22 445,40 500,12" fill="none" stroke="#4de7ff" stroke-width="3"/>
+          <polyline points="0,145 40,132 70,140 105,100 140,112 175,80 215,98 250,68 285,85 320,55 360,75 400,42 445,60 500,32" fill="none" stroke="#45ff9a" stroke-width="1" opacity=".45"/>
+        </svg>
+      </div>
+    </div>
+    <div class="card">
+      <div class="icon">AI</div>
+      <h3>AI Visual Content</h3>
+      <p>Futuristic AI-inspired visuals for websites, ads, reels and social media campaigns.</p>
+      <div style="margin-top:16px;border-radius:12px;padding:20px;background:linear-gradient(135deg,#071d3b,#087bd3);color:#fff;text-align:center">
+        <div style="font-size:42px">✦</div>
+        <b style="font-size:20px">AI CREATIVE STUDIO</b>
+        <div style="margin-top:7px;color:#9ff4ff;font-size:12px">Images • Videos • Campaigns</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="icon">DATA</div>
+      <h3>Digital Dashboard</h3>
+      <p>Clean dashboard-style presentation for analytics, campaigns and technology-focused services.</p>
+      <div style="margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+        <div style="background:#edf8ff;border-radius:10px;padding:12px;text-align:center"><b style="color:#0756b8">24/7</b><small style="display:block;color:#65768a">Online</small></div>
+        <div style="background:#edf8ff;border-radius:10px;padding:12px;text-align:center"><b style="color:#0756b8">AI</b><small style="display:block;color:#65768a">Powered</small></div>
+        <div style="background:#edf8ff;border-radius:10px;padding:12px;text-align:center"><b style="color:#0756b8">PRO</b><small style="display:block;color:#65768a">Digital</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="social"><div class="sec"><h2 class="title">Platforms We Work With</h2><p class="sub">Digital marketing and advertising solutions across popular social platforms.</p><div class="social-grid">
+<div class="social-logo facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v3H6v4h3v8h4v-8h3.2l.8-4H13V9c0-.7.3-1 1-1z"/></svg><b>Facebook</b></div>
+<div class="social-logo instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.5 6.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg><b>Instagram</b></div>
+<div class="social-logo tiktok"><svg viewBox="0 0 24 24"><path d="M15 2h3c.2 2 1.4 3.7 3.5 4.5V10c-1.3-.1-2.5-.5-3.5-1.1V15a7 7 0 1 1-7-7c.4 0 .8 0 1.2.1v3.5A3.5 3.5 0 1 0 14 15V2h1z"/></svg><b>TikTok</b></div>
+<div class="social-logo youtube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.4-.4-5A2.8 2.8 0 0 0 20.6 5C19 4.6 12 4.6 12 4.6S5 4.6 3.4 5A2.8 2.8 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.8 2.8 0 0 0 2 2c1.6.4 8.6.4 8.6.4s7 0 8.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-5 .4-5zM10 15.5v-7l6 3.5-6 3.5z"/></svg><b>YouTube</b></div>
+</div></div></section>
+<section class="apply" id="apply"><div class="sec"><h2 class="title">Request a Service</h2><p class="sub">Tell us what you need and submit your service request.</p><div class="form-box"><form onsubmit="submitRequest(event)"><div class="form-grid"><input type="text" placeholder="Full Name" required><input type="tel" placeholder="WhatsApp Number" required><input type="email" placeholder="Email Address"><select required><option value="">Select a Service</option><option>Website Development</option><option>Facebook &amp; Instagram Advertising</option><option>AI Video Generation</option><option>AI Posters &amp; Graphic Design</option><option>Social Media Management</option><option>Digital Marketing</option></select></div><textarea placeholder="Tell us about your project or requirements" required></textarea><button type="submit">Submit Service Request</button><div id="requestSuccess" class="success">Your request has been recorded on this page. Please contact Digital Youth Network to continue your project.</div></form></div></div></section>
+<section class="steps"><div class="sec"><h2 class="title">How We Work</h2><div class="stepgrid"><div class="step"><b>01 Understand</b><p>We understand your digital requirements.</p></div><div class="step"><b>02 Create</b><p>We develop the required digital solution.</p></div><div class="step"><b>03 Launch</b><p>We prepare your project for online use.</p></div><div class="step"><b>04 Grow</b><p>We support your ongoing digital needs.</p></div></div></div></section>
+<section class="sec ceo"><h2 class="title">Digital Youth Network</h2><p class="sub">Your complete digital solutions partner.</p><div class="name">Yasir Korejo</div><div class="role">CEO, Digital Youth Network</div></section>
+<footer><b>Digital Youth Network</b><br>Complete Digital Solutions in One Place<br>CEO Yasir Korejo</footer>
+<script>function submitRequest(e){e.preventDefault();document.getElementById("requestSuccess").style.display="block";e.target.reset();}</script></body></html>
